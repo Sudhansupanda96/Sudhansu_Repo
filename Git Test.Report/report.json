@@ -1,0 +1,131 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2}},\"activeSectionIndex\":2,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":5,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"54D\"}}}}}]}}",
+      "displayName": "Newbury",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4c7040aec3eb620c87d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":19.426900122524803,\"y\":80.94541717718667,\"z\":0,\"width\":1060.3849650211455,\"height\":563.3801035532192,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"ShipmentRequestItemLotFollower.DeliveryNote\"},{\"queryRef\":\"Sum(ShipmentRequestItemLotFollower.LotFollowerQuantity)\"},{\"queryRef\":\"ShipmentRequestItemLotFollower.STR\"},{\"queryRef\":\"Sum(ShipmentRequest.RequestNumber)\"},{\"queryRef\":\"ShipmentRequestItemLotFollower.TrackingNum\"},{\"queryRef\":\"ShipmentRequestItemLotFollower.LotFollowerNum\"},{\"queryRef\":\"Sum(ShipmentRequestItem.ActualQuantity)\"},{\"queryRef\":\"Sum(ShipmentRequestItem.AvailableQuantity)\"},{\"queryRef\":\"ShipmentRequestItem.Bins\"},{\"queryRef\":\"ShipmentRequestItem.Customer\"},{\"queryRef\":\"ShipmentRequestItem.CustomerPartNum\"},{\"queryRef\":\"ShipmentRequestItem.EndToCustomer\"},{\"queryRef\":\"ShipmentRequestItem.InternalContact\"},{\"queryRef\":\"ShipmentRequestItem.IsActive\"},{\"queryRef\":\"ShipmentRequestItem.IsExternal\"},{\"queryRef\":\"ShipmentRequestItem.LineItemNum\"},{\"queryRef\":\"ShipmentRequestItem.POProjectBuild\"},{\"queryRef\":\"Sum(ShipmentRequestItem.RequestedQuantity)\"},{\"queryRef\":\"ShipmentRequestItem.SalesOffice\"},{\"queryRef\":\"ShipmentRequestItem.SalesOrderNum\"},{\"queryRef\":\"ShipmentRequestItem.ShipmentMethod\"},{\"queryRef\":\"ShipmentRequestItem.ShipmentMethodID\"},{\"queryRef\":\"ShipmentRequestItem.ShipmentRequestID\"},{\"queryRef\":\"ShipmentRequestItem.ShipToCustomer\"},{\"queryRef\":\"ShipmentRequestItem.SpecialInstructions\"},{\"queryRef\":\"ShipmentRequestItem.ShipmentRequestItemID\"},{\"queryRef\":\"ShipmentRequestItem.TrayTR\"},{\"queryRef\":\"ODS_Shipments.ShippedDate\"},{\"queryRef\":\"Sum(ODS_Shipments.ShippedQuantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"ShipmentRequestItem\",\"Type\":0},{\"Name\":\"s1\",\"Entity\":\"ShipmentRequest\",\"Type\":0},{\"Name\":\"s2\",\"Entity\":\"ShipmentRequestItemLotFollower\",\"Type\":0},{\"Name\":\"o\",\"Entity\":\"ODS_Shipments\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ActualQuantity\"},\"Name\":\"Sum(ShipmentRequestItem.ActualQuantity)\",\"NativeReferenceName\":\"ActualQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"AvailableQuantity\"},\"Name\":\"Sum(ShipmentRequestItem.AvailableQuantity)\",\"NativeReferenceName\":\"AvailableQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Bins\"},\"Name\":\"ShipmentRequestItem.Bins\",\"NativeReferenceName\":\"Bins\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"Customer\"},\"Name\":\"ShipmentRequestItem.Customer\",\"NativeReferenceName\":\"Customer\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"CustomerPartNum\"},\"Name\":\"ShipmentRequestItem.CustomerPartNum\",\"NativeReferenceName\":\"CustomerPartNum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"EndToCustomer\"},\"Name\":\"ShipmentRequestItem.EndToCustomer\",\"NativeReferenceName\":\"EndToCustomer\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"InternalContact\"},\"Name\":\"ShipmentRequestItem.InternalContact\",\"NativeReferenceName\":\"InternalContact\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"IsActive\"},\"Name\":\"ShipmentRequestItem.IsActive\",\"NativeReferenceName\":\"IsActive\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"IsExternal\"},\"Name\":\"ShipmentRequestItem.IsExternal\",\"NativeReferenceName\":\"IsExternal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"LineItemNum\"},\"Name\":\"ShipmentRequestItem.LineItemNum\",\"NativeReferenceName\":\"LineItemNum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"POProjectBuild\"},\"Name\":\"ShipmentRequestItem.POProjectBuild\",\"NativeReferenceName\":\"POProjectBuild\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RequestedQuantity\"},\"Name\":\"Sum(ShipmentRequestItem.RequestedQuantity)\",\"NativeReferenceName\":\"RequestedQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOffice\"},\"Name\":\"ShipmentRequestItem.SalesOffice\",\"NativeReferenceName\":\"SalesOffice\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SalesOrderNum\"},\"Name\":\"ShipmentRequestItem.SalesOrderNum\",\"NativeReferenceName\":\"SalesOrderNum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ShipmentMethod\"},\"Name\":\"ShipmentRequestItem.ShipmentMethod\",\"NativeReferenceName\":\"ShipmentMethod\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ShipmentMethodID\"},\"Name\":\"ShipmentRequestItem.ShipmentMethodID\",\"NativeReferenceName\":\"ShipmentMethodID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ShipmentRequestID\"},\"Name\":\"ShipmentRequestItem.ShipmentRequestID\",\"NativeReferenceName\":\"ShipmentRequestID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ShipToCustomer\"},\"Name\":\"ShipmentRequestItem.ShipToCustomer\",\"NativeReferenceName\":\"ShipToCustomer\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"SpecialInstructions\"},\"Name\":\"ShipmentRequestItem.SpecialInstructions\",\"NativeReferenceName\":\"SpecialInstructions\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"ShipmentRequestItemID\"},\"Name\":\"ShipmentRequestItem.ShipmentRequestItemID\",\"NativeReferenceName\":\"ShipmentRequestItemID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"TrayTR\"},\"Name\":\"ShipmentRequestItem.TrayTR\",\"NativeReferenceName\":\"TrayTR\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s1\"}},\"Property\":\"RequestNumber\"},\"Name\":\"Sum(ShipmentRequest.RequestNumber)\",\"NativeReferenceName\":\"RequestNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s2\"}},\"Property\":\"LotFollowerNum\"},\"Name\":\"ShipmentRequestItemLotFollower.LotFollowerNum\",\"NativeReferenceName\":\"LotFollowerNum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s2\"}},\"Property\":\"DeliveryNote\"},\"Name\":\"ShipmentRequestItemLotFollower.DeliveryNote\",\"NativeReferenceName\":\"DeliveryNote\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s2\"}},\"Property\":\"LotFollowerQuantity\"},\"Name\":\"Sum(ShipmentRequestItemLotFollower.LotFollowerQuantity)\",\"NativeReferenceName\":\"LotFollowerQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s2\"}},\"Property\":\"STR\"},\"Name\":\"ShipmentRequestItemLotFollower.STR\",\"NativeReferenceName\":\"STR\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s2\"}},\"Property\":\"TrackingNum\"},\"Name\":\"ShipmentRequestItemLotFollower.TrackingNum\",\"NativeReferenceName\":\"TrackingNum\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"ShippedDate\"},\"Name\":\"ODS_Shipments.ShippedDate\",\"NativeReferenceName\":\"ShippedDate\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"o\"}},\"Property\":\"ShippedQuantity\"},\"Name\":\"Sum(ODS_Shipments.ShippedQuantity)\",\"NativeReferenceName\":\"ShippedQuantity\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 563.38,
+          "width": 1060.39,
+          "x": 19.43,
+          "y": 80.95,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c77d2ad9fe35fdd8572f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1091.1442235484765,\"y\":80.94541717718667,\"z\":1000,\"width\":189.41227619461682,\"height\":64.75633374174934,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ShipmentRequest.RequestNumber\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"ShipmentRequest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RequestNumber\"},\"Name\":\"ShipmentRequest.RequestNumber\",\"NativeReferenceName\":\"RequestNumber\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}],\"header\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 64.76,
+          "width": 189.41,
+          "x": 1091.14,
+          "y": 80.95,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"e83f18a4980c800d8d05\",\"layouts\":[{\"id\":0,\"position\":{\"x\":448.4376111616142,\"y\":0,\"z\":1001,\"width\":495.38595312438247,\"height\":67.9941504288368,\"tabOrder\":1001}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dev_Test\",\"textStyle\":{\"fontSize\":\"24pt\"}}],\"horizontalTextAlignment\":\"center\"}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"84D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 67.99,
+          "width": 495.39,
+          "x": 448.44,
+          "y": 0.00,
+          "z": 1001.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"60D\"}}}}}]}}",
+      "displayName": "Mexicali",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectiona8a0773a7048041d803c",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"855ead258ed282b8792a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":796.5029050235169,\"y\":64.75633374174934,\"z\":2000,\"width\":234.74170981384137,\"height\":80.94541717718667,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"MexicaliShipmentRequestItemBatchInformation.LotID\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MexicaliShipmentRequestItemBatchInformation\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"LotID\"},\"Name\":\"MexicaliShipmentRequestItemBatchInformation.LotID\",\"NativeReferenceName\":\"LotID\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.95,
+          "width": 234.74,
+          "x": 796.50,
+          "y": 64.76,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"da7ef2f87f14e4705774\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1045.814789929252,\"y\":64.75633374174934,\"z\":1000,\"width\":231.5038931267539,\"height\":80.94541717718667,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"ShipmentRequest.RequestNumber\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"ShipmentRequest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RequestNumber\"},\"Name\":\"ShipmentRequest.RequestNumber\",\"NativeReferenceName\":\"RequestNumber\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 80.95,
+          "width": 231.50,
+          "x": 1045.81,
+          "y": 64.76,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ee2c84d818cb02abd938\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.80506699339947,\"y\":33.9970752144184,\"z\":0,\"width\":689.6549543496304,\"height\":620.04189557725,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"ShipmentRequest.RequestNumber\"},{\"queryRef\":\"ShipmentRequest.RequestedDate.Variation.Date Hierarchy.Day\"},{\"queryRef\":\"ShipmentRequest.PartNumber\"},{\"queryRef\":\"MexicaliShipmentRequestItemBatchInformation.STRNumber\"},{\"queryRef\":\"MexicaliShipmentRequestItemBatchInformation.LotID\"},{\"queryRef\":\"Sum(MexicaliShipmentRequestItemBatchInformation.UnrestrictedQuantity)\"},{\"queryRef\":\"MexicaliShipmentRequestItemBatchInformation.BatchNumber\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"MexicaliShipmentRequestItemBatchInformation\",\"Type\":0},{\"Name\":\"s\",\"Entity\":\"ShipmentRequest\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"STRNumber\"},\"Name\":\"MexicaliShipmentRequestItemBatchInformation.STRNumber\",\"NativeReferenceName\":\"STRNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"LotID\"},\"Name\":\"MexicaliShipmentRequestItemBatchInformation.LotID\",\"NativeReferenceName\":\"LotID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"UnrestrictedQuantity\"},\"Name\":\"Sum(MexicaliShipmentRequestItemBatchInformation.UnrestrictedQuantity)\",\"NativeReferenceName\":\"UnrestrictedQuantity\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"BatchNumber\"},\"Name\":\"MexicaliShipmentRequestItemBatchInformation.BatchNumber\",\"NativeReferenceName\":\"BatchNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PartNumber\"},\"Name\":\"ShipmentRequest.PartNumber\",\"NativeReferenceName\":\"PartNumber\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"RequestNumber\"},\"Name\":\"ShipmentRequest.RequestNumber\",\"NativeReferenceName\":\"RequestNumber\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Name\":\"Variation\",\"Property\":\"RequestedDate\"}},\"Hierarchy\":\"Date Hierarchy\"}},\"Level\":\"Day\"},\"Name\":\"ShipmentRequest.RequestedDate.Variation.Date Hierarchy.Day\",\"NativeReferenceName\":\"RequestedDate Day\"}]},\"drillFilterOtherVisuals\":true,\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":7,\"Percent\":0.6}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"73D\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 620.04,
+          "width": 689.65,
+          "x": 51.81,
+          "y": 34.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "SFS",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectionbe9b7d7ca79f9984c5a3",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"33b89807de0d464e5e53\",\"layouts\":[{\"id\":0,\"position\":{\"x\":51.443735440089135,\"y\":34.84898207231844,\"z\":0,\"width\":902.7545832067254,\"height\":615.6653499442925,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CountNonNull(ShipmentRequest.PackageSize)\"}],\"Category\":[{\"queryRef\":\"ShipmentRequest.PartNumber\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"s\",\"Entity\":\"ShipmentRequest\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PackageSize\"}},\"Function\":5},\"Name\":\"CountNonNull(ShipmentRequest.PackageSize)\",\"NativeReferenceName\":\"PackageSize\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PartNumber\"},\"Name\":\"ShipmentRequest.PartNumber\",\"NativeReferenceName\":\"PartNumber\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"PackageSize\"}},\"Function\":5}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"dataPoint\":[{\"properties\":{\"fill\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0.4}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 615.67,
+          "width": 902.75,
+          "x": 51.44,
+          "y": 34.85,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Mexicali2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectione4555194a40ad5bb1556",
+      "ordinal": 3,
+      "visualContainers": [],
+      "width": 1280.00
+    }
+  ]
+}

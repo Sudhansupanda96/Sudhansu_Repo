@@ -1,0 +1,179 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 4,
+            "y": 375.94565217391306
+          },
+          "nodeIndex": "MexicaliShipmentRequestItem",
+          "nodeLineageTag": "ddc48b55-0523-4923-b3d6-042a0a564540",
+          "size": {
+            "height": 300,
+            "width": 357.5
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "MexicaliShipmentRequestItemBatchInformation",
+          "nodeLineageTag": "dabcea10-5d8c-40b5-8892-ce58aaf8ff80",
+          "size": {
+            "height": 300,
+            "width": 337.5
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 654.93102979221908,
+            "y": 278.07246376811594
+          },
+          "nodeIndex": "ShipmentRequest",
+          "nodeLineageTag": "73dd85e2-0b81-440d-999a-299b109d6bc3",
+          "size": {
+            "height": 300,
+            "width": 248
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 31.188405797101467,
+            "y": 744.12560386473422
+          },
+          "nodeIndex": "ShipmentRequestItemMexicaliDeliveryNotes",
+          "nodeLineageTag": "fd8e2c68-ebed-4836-86e0-deb7d908a2ab",
+          "size": {
+            "height": 248,
+            "width": 374.55555555555543
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 635.10527223691611,
+            "y": 0
+          },
+          "nodeIndex": "BusinessUnit",
+          "nodeLineageTag": "1d50db72-f963-4b5f-8a1e-ce8631da6007",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 383.27193890358228,
+            "y": 3.3333333333333144
+          },
+          "nodeIndex": "CostCenters",
+          "nodeLineageTag": "2c8a9e16-8510-48e5-8c51-3bb2b45a791a",
+          "size": {
+            "height": 200,
+            "width": 189
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 917.7357070195244,
+            "y": 598.71014492753625
+          },
+          "nodeIndex": "DeliveryLocations",
+          "nodeLineageTag": "1df8b2dc-1fb1-4415-a856-0b935516bef3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1588.0001997731479,
+            "y": 579.93478260869574
+          },
+          "nodeIndex": "ODS_Shipments",
+          "nodeLineageTag": "e1f4e363-0334-48f3-ac74-ef154f089c15",
+          "size": {
+            "height": 488,
+            "width": 234
+          },
+          "zIndex": 9,
+          "expandedHeight": 124
+        },
+        {
+          "location": {
+            "x": 940.08695652173913,
+            "y": 0
+          },
+          "nodeIndex": "ShipmentRequestItem",
+          "nodeLineageTag": "e2182e2b-d6ce-40a8-8720-a39edbb49da8",
+          "size": {
+            "height": 300,
+            "width": 244
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1738.6849823818438,
+            "y": 0
+          },
+          "nodeIndex": "ShipmentRequestItemLotFollower",
+          "nodeLineageTag": "08086ec8-d0b3-4900-927e-6d6c2fb13937",
+          "size": {
+            "height": 300,
+            "width": 304
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 1284.8950700889211,
+            "y": 162.57125603864745
+          },
+          "nodeIndex": "ShipmentRequestStatusHistory",
+          "nodeLineageTag": "03028e47-0590-49a6-93ff-075724bb5da5",
+          "size": {
+            "height": 300,
+            "width": 327.33333333333326
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 462.12318840579724,
+            "y": 617.13043478260863
+          },
+          "nodeIndex": "ShipmentRequestItemSFS",
+          "nodeLineageTag": "c383859b-5df2-4f3f-9aa2-a9a5e21ce75c",
+          "size": {
+            "height": 231.77536231884062,
+            "width": 285.66666666666674
+          },
+          "zIndex": 11
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 50,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
